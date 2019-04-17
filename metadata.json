@@ -11,6 +11,7 @@
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0 < 9.9.9"},
     {"name":"eyp/eyplib","version_requirement":">= 0.1.0 < 0.2.0"},
     {"name":"eyp/basesystem","version_requirement":">= 0.1.0 < 0.2.0"},
+    {"name":"eyp/shadow","version_requirement":">= 0.1.1 < 0.2.0"},
     {"name":"eyp/pam","version_requirement":">= 0.1.21 < 0.2.0"}
   ],
   "operatingsystem_support": [
