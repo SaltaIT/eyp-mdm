@@ -8,8 +8,6 @@ class mdm (
             $mandatory_services                   = [],
           ) inherits mdm::params{
 
-  include ::system
-
   class { 'pam::cracklib':
     minlen  => $password_minlen,
     dcredit => $password_complexity_digits_credit,
