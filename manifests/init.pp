@@ -20,11 +20,8 @@ class mdm (
     remember => $remember_old_passwords,
   }
 
-  if($mandatory_services.any?)
-  {
-    service { $mandatory_services:
-      ensure => 'running',
-      enable => true,
-    }
+  service { $mandatory_services:
+    ensure => 'running',
+    enable => true,
   }
 }
