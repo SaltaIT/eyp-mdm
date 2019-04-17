@@ -1,10 +1,10 @@
 class mdm (
-            $password_minlen                = '14',
-            $password_complexity_digits_credit               = '-1',
-            $password_complexity_uppercase_credit               = '-1',
-            $password_complexity_other_credit               = '-1',
-            $password_complexity_lowercase_credit               = '-1',
-            $remember_old_passwords         = '12',
+            $password_minlen                      = '14',
+            $password_complexity_digits_credit    = '-1',
+            $password_complexity_uppercase_credit = '-1',
+            $password_complexity_other_credit     = '-1',
+            $password_complexity_lowercase_credit = '-1',
+            $remember_old_passwords               = '12',
           ) inherits mdm::params{
 
   include ::system
