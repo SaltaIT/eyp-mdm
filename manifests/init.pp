@@ -4,6 +4,7 @@ class mdm (
             $password_complexity_uppercase_credit = '-1',
             $password_complexity_other_credit     = '-1',
             $password_complexity_lowercase_credit = '-1',
+            $password_default_max_days            = 30,
             $remember_old_passwords               = '12',
             $mandatory_services                   = [],
           ) inherits mdm::params{
@@ -24,4 +25,14 @@ class mdm (
     ensure => 'running',
     enable => true,
   }
+
+  include ::shadow
+  include ::shadow::useradd
+  include ::shadow::filemodes
+
+  class { 'shadow::logindefs':
+    pass_max_days => $password_default_max_days,
+  }
+
+
 }
