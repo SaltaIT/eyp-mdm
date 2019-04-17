@@ -2,7 +2,7 @@
   "name": "eyp-mdm",
   "version": "0.1.0",
   "author": "eyp",
-  "summary": null,
+  "summary": "MDM-like puppet module to enforce security compliance on Linux systems",
   "license": "Apache-2.0",
   "source": "https://github.com/NTTCom-MS/eyp-mdm",
   "project_page": "https://github.com/NTTCom-MS/eyp-mdm",
