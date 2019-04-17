@@ -24,7 +24,10 @@ MDM-like puppet module
 * checks disk encryption (**eyp-system**)
 * password complexity (**eyp-pam**)
 * disallow reuse of old passwords (**eyp-pam**)
+* set default password expiration (**eyp-shadow**)
 * ensure mandatory services are enabled and running
+
+To enfoce password expiration for a specific user it needs to be set using **password_max_age** of the **user** type
 
 ## Setup
 
