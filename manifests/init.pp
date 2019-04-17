@@ -5,6 +5,7 @@ class mdm (
             $password_complexity_other_credit     = '-1',
             $password_complexity_lowercase_credit = '-1',
             $remember_old_passwords               = '12',
+            $mandatory_services                   = [],
           ) inherits mdm::params{
 
   include ::system
@@ -19,5 +20,13 @@ class mdm (
 
   class { 'pam::unix':
     remember => $remember_old_passwords,
+  }
+
+  if($mandatory_services.any)
+  {
+    service { $mandatory_services:
+      ensure => 'running',
+      enable => true,
+    }
   }
 }

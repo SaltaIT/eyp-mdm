@@ -1,8 +1,5 @@
 class mdm::params {
 
-  $package_name='mdm'
-  $service_name='mdm'
-
   case $::osfamily
   {
     'redhat':
@@ -23,10 +20,7 @@ class mdm::params {
         {
           case $::operatingsystemrelease
           {
-            /^14.*$/:
-            {
-            }
-            /^16.*$/:
+            /^1[468].*$/:
             {
             }
             default: { fail("Unsupported Ubuntu version! - ${::operatingsystemrelease}")  }
