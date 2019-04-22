@@ -6,7 +6,7 @@ class mdm (
             $password_complexity_lowercase_credit = '-1',
             $password_default_max_days            = 30,
             $remember_old_passwords               = '12',
-            $mandatory_services                   = [],
+            $mandatory_services                   = undef,
           ) inherits mdm::params{
 
   class { 'pam::cracklib':
@@ -21,9 +21,12 @@ class mdm (
     remember => $remember_old_passwords,
   }
 
-  service { $mandatory_services:
-    ensure => 'running',
-    enable => true,
+  if($mandatory_services!=undef)
+  {
+    service { $mandatory_services:
+      ensure => 'running',
+      enable => true,
+    }  
   }
 
   include ::shadow
