@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.6
+
+* added datawipe
+
 ## 0.1.5
 
 * updated dependencies
