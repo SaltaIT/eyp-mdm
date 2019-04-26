@@ -7,7 +7,12 @@ class mdm (
             $password_default_max_days            = 30,
             $remember_old_passwords               = '12',
             $mandatory_services                   = undef,
+            $manage_security_limits               = false,
           ) inherits mdm::params{
+
+  class { 'pam':
+    manage_security_limits => $manage_security_limits,
+  }
 
   class { 'pam::cracklib':
     minlen  => $password_minlen,
@@ -26,7 +31,7 @@ class mdm (
     service { $mandatory_services:
       ensure => 'running',
       enable => true,
-    }  
+    }
   }
 
   include ::shadow
