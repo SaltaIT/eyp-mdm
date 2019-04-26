@@ -42,5 +42,17 @@ class mdm (
     pass_max_days => $password_default_max_days,
   }
 
+  case $::osfamily
+  {
+    'redhat':
+    {
 
+    }
+    'Debian':
+    {
+      class { 'apt::unattendedupgrades':
+      }
+    }
+    default: { fail('Unsupported OS!')  }
+  }
 }

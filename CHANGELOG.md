@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.4
+
+* added support for **apt::unattendedupgrades**
+
 ## 0.1.3
 
 * disable manage_security_limits by default
