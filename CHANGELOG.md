@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.5
+
+* updated dependencies
+
 ## 0.1.4
 
 * added support for **apt::unattendedupgrades**
