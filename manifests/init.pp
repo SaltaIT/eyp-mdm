@@ -1,11 +1,12 @@
+# 60 days, 8 characters, blocked 5 historical passwords, alphanumeric, screen lock after 5 mins for laptops.
 class mdm (
-            $password_minlen                      = '14',
+            $password_minlen                      = '8',
             $password_complexity_digits_credit    = '-1',
             $password_complexity_uppercase_credit = '-1',
             $password_complexity_other_credit     = '-1',
             $password_complexity_lowercase_credit = '-1',
-            $password_default_max_days            = 30,
-            $remember_old_passwords               = '12',
+            $password_default_max_days            = '60',
+            $remember_old_passwords               = '5',
             $mandatory_services                   = undef,
             $manage_security_limits               = false,
           ) inherits mdm::params{

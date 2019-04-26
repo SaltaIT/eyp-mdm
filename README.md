@@ -33,22 +33,16 @@ To enfoce password expiration for a specific user it needs to be set using **pas
 
 ### What mdm affects
 
-* A list of files, packages, services, or operations that the module will alter,
-  impact, or execute on the system it's installed on.
-* This is a great place to stick any warnings.
-* Can be in list or paragraph form.
-
 ### Setup Requirements
 
 This module requires pluginsync enabled
 
 ### Beginning with mdm
 
-The very basic steps needed for a user to get the module up and running.
-
-If your most recent release breaks compatibility or requires particular steps
-for upgrading, you may wish to include an additional section here: Upgrading
-(For an example, see http://forge.puppetlabs.com/puppetlabs/firewall).
+Default policy:
+* 60 days
+* 8 characters
+* remember 5 old passwords
 
 ## Usage
 

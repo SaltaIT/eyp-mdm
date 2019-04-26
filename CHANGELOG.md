@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.7
+
+* changed default values
+
 ## 0.1.6
 
 * added datawipe
