@@ -1,7 +1,7 @@
 {
   "name": "eyp-mdm",
   "version": "0.1.7",
-  "author": "eyp",
+  "author": "Jordi Prats",
   "summary": "MDM-like puppet module to enforce security compliance on Linux systems",
   "license": "Apache-2.0",
   "source": "https://github.com/SaltaIT/eyp-mdm",
