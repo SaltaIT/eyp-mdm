@@ -1,17 +1,17 @@
 {
   "name": "eyp-mdm",
-  "version": "0.1.7",
-  "author": "eyp",
+  "version": "1.0.7",
+  "author": "Jordi Prats",
   "summary": "MDM-like puppet module to enforce security compliance on Linux systems",
   "license": "Apache-2.0",
-  "source": "https://github.com/NTTCom-MS/eyp-mdm",
-  "project_page": "https://github.com/NTTCom-MS/eyp-mdm",
-  "issues_url": "https://github.com/NTTCom-MS/eyp-mdm/issues",
+  "source": "https://github.com/SaltaIT/eyp-mdm",
+  "project_page": "https://github.com/SaltaIT/eyp-mdm",
+  "issues_url": "https://github.com/SaltaIT/eyp-mdm/issues",
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0 < 9.9.9"},
-    {"name":"eyp/eyplib","version_requirement":">= 0.1.0 < 0.2.0"},
+    {"name":"eyp/eyplib","version_requirement":">= 1.0.0 < 2.0.0"},
     {"name":"eyp/apt","version_requirement":">= 0.1.10 < 0.2.0"},
-    {"name":"eyp/yum","version_requirement":">= 0.1.0 < 0.2.0"},
+    {"name":"eyp/yum","version_requirement":">= 1.0.0 < 2.0.0"},
     {"name":"eyp/shadow","version_requirement":">= 0.1.1 < 0.2.0"},
     {"name":"eyp/pam","version_requirement":">= 0.1.21 < 0.2.0"}
   ],
@@ -44,7 +44,7 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 3.8.0"
+      "version_requirement": ">= 4.0.0"
     }
   ]
 }
